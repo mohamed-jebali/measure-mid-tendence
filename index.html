@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Measure Mid Tendence</title>
+        <!-- Favicon-->
+        <link rel="icon" type="./img/statistics-svgrepo-com.svg" href="./assets/statistics-svgrepo-com.svg" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Boostrap Link -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <!-- CSS LINK -->
+        <link rel="stylesheet" href="./style/style.css">
+        <!-- FONTAWESOME CDN LINK -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-light bg-light static-top py-4">
+            <div class="container">
+                <a class="navbar-brand" href="#!">Measure Mid Tendence</a>
+                <a class="btn btn-dark text-white" href="./script/script.js"><i class="fa-brands fa-github fa-xl pe-2"></i> Go to Repository</a>
+            </div>
+        </nav>
+
+
+
+
+        <!-- Selected Method Section-->
+        <section>
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="text-center text-white">
+                            <h1 class="mb-5 text-black py-4 selected-method">Select Method</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Methods Section-->
+        <section class="features-icons bg-light text-center py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <h3>Get Medium Value</h3>
+                            <p class="lead mb-4">Calculate the Average Value
+                                Use this option to compute the average value of the provided dataset. The average, or mean, is a fundamental statistical measure that provides insights into the central tendency of the data.</p>
+                            <button class="btn btn-primary btn-lg mid-button" id="submitButton" type="submit">Apply Method</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <h3>Get Median Value</h3>
+                            <p class="lead mb-4">"Determine the Median Value"
+                                "Choose this option to find the median value within the dataset. The median is a robust statistical measure that identifies the middle point of the data, making it a valuable indicator of central tendency."</p>
+                            <button class="btn btn-primary btn-lg median-button" id="submitButton" type="submit">Apply Method</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                            <h3>Get Trend Statistical Value</h3>
+                            <p class="lead mb-4">"Calculate Statistical Trend Value"
+                                "Opt for this option to calculate a statistical trend value based on the dataset. Trend analysis can help you identify patterns and changes over time, providing valuable insights into the data's behavior."</p>
+                            <button class="btn btn-primary btn-lg frequency-button" id="submitButton" type="submit">Apply Method</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Number Lenght Section -->
+        <section>
+            <div class="container">
+                <div class="row justify-content-center py-5">
+                    <div class="col-10 col-lg-6">
+                        <div class="mb-3">
+                            <label for="lenghtNumber" class="form-label">Select Numbers Quantity</label>
+                            <input type="number" class="form-control" id="lenghtNumber" name="lenghtNumber" aria-describedby="lenghtNumber">
+                            <div id="lenghtNumber" class="form-text mb-3">The Limit of numbers is 10</div>
+                            <button type="button" class="btn btn-primary number-lenght mb-3">Set Numbers</button>
+                            <div class="alert number-lenght-message" role="alert">
+
+                            </div>                          
+                          </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="mb-3 input-generated">
+                            <!-- <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                          </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+    <script src="./script/script.js"></script>
+</html>
