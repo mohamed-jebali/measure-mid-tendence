@@ -25,8 +25,8 @@
         <!-- Navigation-->
         <nav class="navbar navbar-light bg-light static-top py-4">
             <div class="container">
-                <a class="navbar-brand" href="#!">Measure Mid Tendence</a>
-                <a class="btn btn-dark text-white" href="./script/script.js"><i class="fa-brands fa-github fa-xl pe-2"></i> Go to Repository</a>
+                <a class="navbar-brand" href="#">Measure Mid Tendence</a>
+                <a class="btn btn-dark text-white" href="https://github.com/mohamed-jebali/measure-mid-tendence"><i class="fa-brands fa-github fa-xl pe-2"></i> Go to Repository</a>
             </div>
         </nav>
 
@@ -37,7 +37,12 @@
         <section>
             <div class="container position-relative">
                 <div class="row justify-content-center">
-                    <div class="col-xl-6">
+                    <div class="col-12">
+                        <div class="alert alert-info my-5 d-flex align-items-center">
+                            <i class="fa-solid fa-circle-exclamation fa-2x pe-3"></i> This website doesn't have AJAX implementation. To get a valid value for your statistic, please refresh the page after making your selection and entering your data.
+                        </div>
+                    </div>
+                    <div class="col-xl-6">                        
                         <div class="text-center text-white">
                             <h1 class="mb-5 text-black py-4 selected-method">Select Method</h1>
                         </div>
@@ -105,14 +110,76 @@
                 <div class="row justify-content-center">
                     <div class="col-8">
                         <div class="mb-3 input-generated">
-                            <!-- <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
-                          </div>                        
+
+                          </div>  
                     </div>
                 </div>
             </div>
         </section>
+
+
+
+
+        <!-- RESULT SECTION -->
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="alert result-stat my-5" role="alert">
+
+                        </div>     
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="">
+    <!-- Footer -->
+    <footer class="text-center text-white bg-light">
+         
+        <!-- Section: Text -->
+        <section class="mb-2">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+                <p class="text-black pt-4">
+                    This website was created for the purpose of experimenting with vanilla JavaScript and testing my skills as a full-stack developer. If you enjoyed using it and would like to get in touch or learn more about the project, please click the button below.
+                </p>                
+            </div>
+          </div>
+        </section>
+        <!-- Section: Text -->
+  
+        <!-- Section: Social -->
+        <section class="text-center py-4">
+          <a href="https://www.linkedin.com/in/mohamed-jebali-005058197/" class="text-blue me-4">
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+          </a>
+          <a href="https://github.com/mohamed-jebali/measure-mid-tendence" class="text-black me-4">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </section>
+        <!-- Section: Social -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2023 Copyright:
+        <a class="text-black text-decoration-none py-3" href="https://github.com/mohamed-jebali/"
+           >  mohamed-jebali</a
+          >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+  <!-- End of .container -->
 
     </body>
     <script src="./script/script.js"></script>

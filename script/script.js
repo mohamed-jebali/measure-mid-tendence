@@ -1,21 +1,4 @@
-const arrayEsempio = [1,3,4,5,6,7,7,8,8,7,7,7,8,8,8,8,8];
-
-const mediaRisultato = "ecco la media dell'array: " + media(arrayEsempio)
-
-const medianaRisultato = "ecco la mediana dell'array: " + mediana(arrayEsempio);
-
-const modaRisultato = "ecco la moda dell'array: " + moda(arrayEsempio);
-
-console.log(mediaRisultato);
-
-console.log(medianaRisultato);
-
-console.log(modaRisultato);
-
-
-
-
-// BOTTONI
+// VARIABILI
 
 let mediaButton = document.querySelector(".mid-button");
 
@@ -31,6 +14,34 @@ let inputLenghtNumbers = document.querySelector("#lenghtNumber");
 
 let inputMessage = document.querySelector(".number-lenght-message");
 
+let resultStat = document.querySelector(".result-stat")
+
+
+let mediaButtonClicked = false
+
+let medianButtonClicked = false
+
+let frequencyButtonClicked = false
+
+
+// BOTTONI
+
+
+mediaButton.addEventListener("click", function(){
+    mediaButtonClicked = true;
+    selectedMethod.innerHTML = "Mid method has been selected"
+})
+
+medianButton.addEventListener("click", function(){
+    medianButtonClicked = true;
+    selectedMethod.innerHTML = "Median method has been selected"
+})
+
+frequencyButton.addEventListener("click", function(){
+    frequencyButtonClicked = true
+    selectedMethod.innerHTML = "Trend Statistical method has been selected"
+})
+
 
 
 inputLenghtNumbers.addEventListener("keyup", function(event){
@@ -41,6 +52,8 @@ inputLenghtNumbers.addEventListener("keyup", function(event){
 
 
 numberLenghtButton.addEventListener("click", getInput)
+
+// FUNZIONI
 
 
 function getInput() {    
@@ -60,7 +73,7 @@ function getInput() {
         inputMessage.textContent = "you have selected " + inputLenghtNumbers.value + " numbers"
 
         let containerInputGenerated = document.querySelector(".input-generated");
-        containerInputGenerated.innerHTML = ""; // Pulisci i campi input esistenti
+        containerInputGenerated.innerHTML = "";
 
 
         let titleInput = document.createElement("h1");
@@ -70,46 +83,77 @@ function getInput() {
 
         containerInputGenerated.appendChild(titleInput)
 
+        let numberValue = null
+
         for (let i = 0; i < inputLenghtNumbers.value; i++) {
-            let numberValue = document.createElement("input");
+            numberValue = document.createElement("input");
+            numberValue.setAttribute("type", "number");
             containerInputGenerated.appendChild(numberValue);
             numberValue.classList.add("form-control");
+            numberValue.classList.add("input-selected");
             numberValue.classList.add("mb-3");
         }
+        
+        
 
 
         let buttonCalculate = document.createElement("button");
         buttonCalculate.innerHTML = "Get Statistic Value"
         buttonCalculate.classList.add("btn");
         buttonCalculate.classList.add("btn-primary");
-        containerInputGenerated.appendChild(buttonCalculate)
+        containerInputGenerated.appendChild(buttonCalculate)        
+
+
+        buttonCalculate.addEventListener("click",getStat)
+
+        numberValue.addEventListener("keyup", function(event){
+            if(event.key === "Enter"){
+                getStat()
+            }
+        })
+
+        
 
     }
 }
 
 
+function getStat() {
+    let inputNumberUser = [];
+    let valueInput = document.querySelectorAll(".input-selected");
 
-mediaButton.addEventListener("click", function(){
-    console.log("hai premuto media!")
-    selectedMethod.innerHTML = "Mid method has been selected"
-})
+    valueInput.forEach(Singleinput => {
+        let inputValues = parseInt(Singleinput.value);
+        if (!isNaN(inputValues)) {
+            inputNumberUser.push(inputValues);
+        }
+    });
 
-medianButton.addEventListener("click", function(){
-    console.log("hai premuto mediana!")
-    selectedMethod.innerHTML = "Median method has been selected"
-})
+    if (inputNumberUser.length === 0) {
+        resultStat.innerHTML = "Insert at least one numeric value";
+        resultStat.classList.add('alert-warning');
+    } else if (mediaButtonClicked) {
+        resultStat.innerHTML = "Here is your Statistic Value: " + media(inputNumberUser);
+        resultStat.classList.remove('alert-warning');
+        resultStat.classList.add('alert-success');
+    } else if (medianButtonClicked) {
+        resultStat.innerHTML = "Here is your Statistic Value: " + mediana(inputNumberUser);
+        resultStat.classList.remove('alert-warning');
+        resultStat.classList.add('alert-success');
+    } else if (frequencyButtonClicked) {
+        resultStat.innerHTML = "Here is your Statistic Value: " + moda(inputNumberUser);
+        resultStat.classList.remove('alert-warning');
+        resultStat.classList.add('alert-success');
+    } else {
+        resultStat.innerHTML = "You have to select the method to get the statistic value";
+        resultStat.classList.add('alert-warning');
+        resultStat.classList.remove('alert-success');
+    }
+}
 
-frequencyButton.addEventListener("click", function(){
-    console.log("hai premuto moda!")
-    selectedMethod.innerHTML = "Trend Statistical method has been selected"
-})
 
 
-
-
-
-// FUNZIONI
-
+// FUNZIONI DI TENDENZA STATISTICA
 
    function media(arrayMedia){
 
