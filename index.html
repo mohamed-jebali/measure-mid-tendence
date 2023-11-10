@@ -7,11 +7,14 @@
         <meta name="author" content="" />
         <title>Measure Mid Tendence</title>
         <!-- Favicon-->
-        <link rel="icon" type="./img/statistics-svgrepo-com.svg" href="./assets/statistics-svgrepo-com.svg" />
+        <link rel="icon" type="./img/statistics-svgrepo-com.svg" href="./assets/logo.svg" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <!-- Boostrap Link -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
         <!-- CSS LINK -->
@@ -24,9 +27,30 @@
 
         <!-- Navigation-->
         <nav class="navbar navbar-light bg-light static-top py-4">
-            <div class="container">
-                <a class="navbar-brand" href="#">Measure Mid Tendence</a>
-                <a class="btn btn-dark text-white" href="https://github.com/mohamed-jebali/measure-mid-tendence"><i class="fa-brands fa-github fa-xl pe-2"></i> Go to Repository</a>
+            <div class="container px-4 px-md-2">
+                <a class="navbar-brand d-flex align-items-end" href="#"><?xml version="1.0" encoding="iso-8859-1"?>
+                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg style="height: 40px; padding-right: 1rem;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                         viewBox="0 0 333.69 333.69" xml:space="preserve">
+                    <g>
+                        <g>
+                            <rect x="29.787" y="181.064" style="fill:#FFC843;" width="67.408" height="152.625"/>
+                            <rect x="9.9" y="181.064" style="fill:#E0B03B;" width="19.888" height="152.625"/>
+                        </g>
+                        <g>
+                            <rect x="143.085" y="130.187" style="fill:#00AF41;" width="67.408" height="203.503"/>
+                            <rect x="123.196" y="130.187" style="fill:#009638;" width="19.889" height="203.503"/>
+                        </g>
+                        <g>
+                            <rect x="256.382" y="82.189" style="fill:#0071CE;" width="67.408" height="251.501"/>
+                            <rect x="236.493" y="82.189" style="fill:#005FAD;" width="19.889" height="251.501"/>
+                        </g>
+                        <polygon style="fill:#333E48;" points="233.003,0 251.053,18.05 214.7,54.403 187.868,27.57 104.016,111.421 79.564,86.969 
+                            11.934,154.598 21.834,164.497 79.564,106.768 104.016,131.22 187.868,47.369 214.7,74.202 260.954,27.95 279.003,46.001 
+                            279.003,0 	"/>
+                    </g>
+                    </svg><h6> Measure Mid Tendence</h6></a>
+                <a class="btn btn-dark text-white mobile-button-size" href="https://github.com/mohamed-jebali/measure-mid-tendence" title="Go to Repository"><i class="fa-brands fa-github fa-xl pe-2"></i></a>  
             </div>
         </nav>
 
@@ -37,14 +61,19 @@
         <section>
             <div class="container position-relative">
                 <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="alert alert-info my-5 d-flex align-items-center">
+                    <div class="col-11 col-md-12">
+                        <div class="alert alert-warning my-5 d-flex align-items-center">
                             <i class="fa-solid fa-circle-exclamation fa-2x pe-3"></i> This website doesn't have AJAX implementation. To get a valid value for your statistic, please refresh the page after making your selection and entering your data.
                         </div>
                     </div>
                     <div class="col-xl-6">                        
-                        <div class="text-center text-white">
-                            <h1 class="mb-5 text-black py-4 selected-method">Select Method</h1>
+                        <div class="text-center text-white row justify-content-between">
+                            <div class="col-12 col-md-6 d-md-flex align-items-center justify-content-start">
+                                <h1 class="mb-5 text-black py-4 selected-method text-center text-md-start">Select Method</h1>
+                            </div>
+                            <div class="col-5 ps-5">
+                                <img class="image-stat" src="./assets/bg.svg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -53,30 +82,30 @@
 
         
         <!-- Methods Section-->
-        <section class="features-icons bg-light text-center py-5">
+        <section class="methods-wrapper bg-light text-center py-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-4">
                         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <h3>Get Medium Value</h3>
-                            <p class="lead mb-4">Calculate the Average Value
+                            <h3 class="mb-4">Get Medium Value</h3>
+                            <p class="fs-6 px-3">Calculate the Average Value
                                 Use this option to compute the average value of the provided dataset. The average, or mean, is a fundamental statistical measure that provides insights into the central tendency of the data.</p>
                             <button class="btn btn-primary btn-lg mid-button" id="submitButton" type="submit">Apply Method</button>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-10 col-lg-4">
                         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <h3>Get Median Value</h3>
-                            <p class="lead mb-4">"Determine the Median Value"
-                                "Choose this option to find the median value within the dataset. The median is a robust statistical measure that identifies the middle point of the data, making it a valuable indicator of central tendency."</p>
+                            <h3 class="mb-4">Get Median Value</h3>
+                            <p class="fs-6 px-3">Determine the Median Value
+                                Choose this option to find the median value within the dataset. The median is a robust statistical measure that identifies the middle point of the data, making it a valuable indicator of central tendency.</p>
                             <button class="btn btn-primary btn-lg median-button" id="submitButton" type="submit">Apply Method</button>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-10 col-lg-4">
                         <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                            <h3>Get Trend Statistical Value</h3>
-                            <p class="lead mb-4">"Calculate Statistical Trend Value"
-                                "Opt for this option to calculate a statistical trend value based on the dataset. Trend analysis can help you identify patterns and changes over time, providing valuable insights into the data's behavior."</p>
+                            <h3 class="mb-4">Get Trend Statistical Value</h3>
+                            <p class="fs-6 px-3">Calculate Statistical Trend Value
+                                Opt for this option to calculate a statistical trend value based on the dataset. Trend analysis can help you identify patterns and changes over time, providing valuable insights into the data's behavior.</p>
                             <button class="btn btn-primary btn-lg frequency-button" id="submitButton" type="submit">Apply Method</button>
                         </div>
                     </div>
@@ -85,67 +114,67 @@
         </section>
 
 
-        <!-- Number Lenght Section -->
-        <section>
-            <div class="container">
-                <div class="row justify-content-center py-5">
-                    <div class="col-10 col-lg-6">
-                        <div class="mb-3">
-                            <label for="lenghtNumber" class="form-label">Select Numbers Quantity</label>
-                            <input type="number" class="form-control" id="lenghtNumber" name="lenghtNumber" aria-describedby="lenghtNumber">
-                            <div id="lenghtNumber" class="form-text mb-3">The Limit of numbers is 10</div>
-                            <button type="button" class="btn btn-primary number-lenght mb-3">Set Numbers</button>
-                            <div class="alert number-lenght-message" role="alert">
-
-                            </div>                          
-                          </div>                        
+        <div class="result-bg">
+            <!-- Number Lenght Section -->
+            <section>
+                <div class="container">
+                    <div class="row justify-content-center py-5">
+                        <div class="col-10 col-lg-6">
+                            <div class="mb-3">
+                                <label for="lenghtNumber" class="form-label">Select Numbers Quantity</label>
+                                <input type="number" class="form-control" id="lenghtNumber" name="lenghtNumber" aria-describedby="lenghtNumber">
+                                <div id="lenghtNumber" class="form-text mb-3">The Limit of numbers is 10</div>
+                                <button type="button" class="btn btn-primary number-lenght mb-3">Set Numbers</button>
+                                <div class="alert number-lenght-message" role="alert">
+    
+                                </div>                          
+                              </div>                        
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-
-        <section>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-8">
-                        <div class="mb-3 input-generated">
-
-                          </div>  
+            </section>
+    
+    
+            <section>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-8">
+                            <div class="mb-3 input-generated">
+    
+                              </div>  
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-
-
-
-        <!-- RESULT SECTION -->
-        <section>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-8">
-                        <div class="alert result-stat my-5" role="alert">
-
-                        </div>     
+            </section>
+    
+    
+    
+    
+            <!-- RESULT SECTION -->
+            <section>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-8">
+                            <div class="alert result-stat my-5" role="alert">
+    
+                            </div>     
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
 
-        <!-- FOOTER -->
-        <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="">
+
     <!-- Footer -->
     <footer class="text-center text-white bg-light">
          
         <!-- Section: Text -->
         <section class="mb-2">
           <div class="row d-flex justify-content-center">
-            <div class="col-lg-8">
+            <div class="col-9 col-lg-8">
                 <p class="text-black pt-4">
-                    This website was created for the purpose of experimenting with vanilla JavaScript and testing my skills as a full-stack developer. If you enjoyed using it and would like to get in touch or learn more about the project, please click the button below.
+                    This website was created for the purpose of experimenting with vanilla JavaScript and testing my skills as a full-stack developer. If you enjoyed using it and would like to get in touch or learn more about the project, please click the icons below.
                 </p>                
             </div>
           </div>
@@ -155,10 +184,10 @@
         <!-- Section: Social -->
         <section class="text-center py-4">
           <a href="https://www.linkedin.com/in/mohamed-jebali-005058197/" class="text-blue me-4">
-            <i class="fa-brands fa-linkedin fa-2x"></i>
+            <i class="fa-brands fa-linkedin fa-3x"></i>
           </a>
           <a href="https://github.com/mohamed-jebali/measure-mid-tendence" class="text-black me-4">
-            <i class="fab fa-github fa-2x"></i>
+            <i class="fab fa-github fa-3x"></i>
           </a>
         </section>
         <!-- Section: Social -->
@@ -170,16 +199,11 @@
            class="text-center p-3"
            style="background-color: rgba(0, 0, 0, 0.2)"
            >
-        © 2023 Copyright:
-        <a class="text-black text-decoration-none py-3" href="https://github.com/mohamed-jebali/"
-           >  mohamed-jebali</a
-          >
+        © 2023 Copyright: Mohamed Jebali
       </div>
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
-  </div>
-  <!-- End of .container -->
 
     </body>
     <script src="./script/script.js"></script>

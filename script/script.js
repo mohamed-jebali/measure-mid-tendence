@@ -91,7 +91,7 @@ function getInput() {
             containerInputGenerated.appendChild(numberValue);
             numberValue.classList.add("form-control");
             numberValue.classList.add("input-selected");
-            numberValue.classList.add("mb-3");
+            numberValue.classList.add("mb-4");
         }
         
         
@@ -133,15 +133,15 @@ function getStat() {
         resultStat.innerHTML = "Insert at least one numeric value";
         resultStat.classList.add('alert-warning');
     } else if (mediaButtonClicked) {
-        resultStat.innerHTML = "Here is your Statistic Value: " + media(inputNumberUser);
+        resultStat.innerHTML = "Here is your Statistic Value: " + media(inputNumberUser).toFixed(2);
         resultStat.classList.remove('alert-warning');
         resultStat.classList.add('alert-success');
     } else if (medianButtonClicked) {
-        resultStat.innerHTML = "Here is your Statistic Value: " + mediana(inputNumberUser);
+        resultStat.innerHTML = "Here is your Statistic Value: " + mediana(inputNumberUser).toFixed(2);
         resultStat.classList.remove('alert-warning');
         resultStat.classList.add('alert-success');
     } else if (frequencyButtonClicked) {
-        resultStat.innerHTML = "Here is your Statistic Value: " + moda(inputNumberUser);
+        resultStat.innerHTML = "Here is your Statistic Value: " + moda(inputNumberUser).toFixed(2);
         resultStat.classList.remove('alert-warning');
         resultStat.classList.add('alert-success');
     } else {
